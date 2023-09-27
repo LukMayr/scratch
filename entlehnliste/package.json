@@ -1,0 +1,30 @@
+{
+  "name": "entlehnliste",
+  "version": "1.0.0",
+  "description": "A tool to borrow devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukMayr/scratch.git"
+  },
+  "keywords": [
+    "entlehnliste",
+    "device",
+    "teacher",
+    "borrow",
+    "pubil",
+    "student"
+  ],
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/LukMayr/scratch/issues"
+  },
+  "homepage": "https://github.com/LukMayr/scratch#readme",
+  "dependencies": {
+    "paper-css": "^0.4.1"
+  }
+}
