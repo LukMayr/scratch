@@ -27,7 +27,7 @@ class leasement {
     - {static} startDateTime
     - {abstract}{static} deviceId
     - expectedReturnDate
-    - returnDate
+    - actualReturnDate
     - returnComment
     - {abstract} approvedBy
 }
