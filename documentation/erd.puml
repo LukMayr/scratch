@@ -1,36 +1,35 @@
 @startuml
 
 class role {
-    - id
+    - {static} id
     - name
 }
 
 class user {
-    - id
+    - {static}  id
     - name
-    - roleId
+    - {abstract} roleId
 }
 
 class device {
-    - id
+    - {static} id
     - name
-    - deviceCondition
+    - {abstract} deviceCondition
 }
 
 class deviceCondition {
-    - id
+    - {static} id
     - state
 }
 
 class leasement {
-    - id
-    - borrower
-    - startDate
-    - deviceId
+    - {abstract}{static} borrower
+    - {static} startDateTime
+    - {abstract}{static} deviceId
     - expectedReturnDate
     - returnDate
     - returnComment
-    - apporevBy
+    - {abstract} approvedBy
 }
 
 
