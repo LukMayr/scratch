@@ -1,0 +1,43 @@
+@startuml
+
+class role {
+    - {static} id
+    - name
+}
+
+class user {
+    - {static}  id
+    - name
+    - {abstract} roleId
+}
+
+class device {
+    - {static} id
+    - name
+    - {abstract} deviceCondition
+}
+
+class deviceCondition {
+    - {static} id
+    - state
+}
+
+class leasement {
+    - {abstract}{static} borrower
+    - {static} startDateTime
+    - {abstract}{static} deviceId
+    - expectedReturnDate
+    - actualReturnDate
+    - returnComment
+    - {abstract} approvedBy
+}
+
+
+
+user "1" -- "*" role
+user "1" -- "*" leasement
+leasement "1" -- "*" device
+device "*" -- "1" deviceCondition
+
+
+@enduml
