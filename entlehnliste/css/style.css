@@ -1,0 +1,11 @@
+html {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+}
+
+table, th, td { 
+  border: thin solid;
+  border-collapse: collapse; 
+}
